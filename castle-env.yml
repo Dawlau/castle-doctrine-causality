@@ -1,0 +1,19 @@
+name: castle
+channels:
+  - defaults
+  - pip
+dependencies:
+  - matplotlib
+  - networkx
+  - notebook
+  - numpy
+  - pandas
+  - scikit-learn
+  - rpy2
+  - pip:
+      - cdt
+      - conditional-independence==0.1a6
+      - dowhy
+      - ges
+      - hyppo
+      - pingouin
