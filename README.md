@@ -1,6 +1,6 @@
 # Identifying the causal variables in the Castle doctrine dataset
 
-This project is part of the Causality course at the UvA during fall 2023. We work with the Castle doctrine dataset (Cheng et al., 2012) to identify whether the castle (stand-your-ground) doctrine influences the rates of violence, and what are the important variables influencing this relationship.
+This project is part of the Causality course at the UvA during fall 2023. We work with the Castle doctrine dataset (Cheng et al., 2012) to identify whether the castle (stand-your-ground) doctrine influences the rates of violence, and what are the important variables influencing this relationship. You can also find the dataset in [this repository](https://github.com/NickCH-K/causaldata/tree/main/Python/causaldata/castle).
 
 ## Set-up
 To install the `castle` environment, run the following in the terminal:
