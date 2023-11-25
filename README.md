@@ -3,9 +3,11 @@
 This project is part of the Causality course at the UvA during fall 2023. We work with the Castle doctrine dataset (Cheng et al., 2012) to identify whether the castle (stand-your-ground) doctrine influences the rates of violence, and what are the important variables influencing this relationship.
 
 ## Set-up
-To install the environment, run the following in the terminal:
+To install the `castle` environment, run the following in the terminal:
 
-`conda env create -f castle-env.yml`
+```
+conda env create -f castle-env.yml
+```
 
 ## The project pipeline
 
