@@ -24,4 +24,4 @@ We pay attention to the following:
 
 
 ## References
-Cheng, Cheng and Hoekstra, Mark and Cheng, Cheng, Does Strengthening Self-Defense Law Deter Crime or Escalate Violence? Evidence from Castle Doctrine (June 2012). NBER Working Paper No. w18134, Available at SSRN: https://ssrn.com/abstract=2079878
+*Cheng, Cheng and Hoekstra, Mark and Cheng, Cheng, Does Strengthening Self-Defense Law Deter Crime or Escalate Violence? Evidence from Castle Doctrine (June 2012). NBER Working Paper No. w18134, Available at SSRN: https://ssrn.com/abstract=2079878*
