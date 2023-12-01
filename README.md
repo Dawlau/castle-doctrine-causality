@@ -1,4 +1,4 @@
-# Identifying the Causal Variables in the Castle Doctrine Dataset 🏰
+# Identifying the Causal Variables of the Castle Doctrine 🏰
 
 This project is part of the Causality course at the UvA during fall 2023. We work with the Castle doctrine dataset (Cheng et al., 2012) to identify whether the castle (stand-your-ground) doctrine influences the rates of violence, and what are the important variables influencing this relationship. You can also find the dataset in [this repository](https://github.com/NickCH-K/causaldata/tree/main/Python/causaldata/castle).
 
@@ -8,6 +8,9 @@ To install the `castle` environment, run the following in the terminal:
 ```
 conda env create -f castle-env.yml
 ```
+
+## Dataset
+We use the FBI Uniform Crime Reports Summary Part I files from 2000 to 2010. The FBI Uniform Crime Reports is a harmonized data set on eight “index” crimes collected from voluntarily participating police agencies across the country. 
 
 ## The project pipeline
 We pay attention to the following:
