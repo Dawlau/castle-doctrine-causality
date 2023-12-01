@@ -10,7 +10,14 @@ conda env create -f castle-env.yml
 ```
 
 ## The project pipeline
-
+We pay attention to the following:
+1. **Exploratory data analysis**
+* Testing for dependence of the variables
+2. **Identifying estimands**
+* Backdoor/frontdoor criterion, instrumental variables
+3. **Estimating causal effects**
+4. **Causal discovery**
+5. **Validation and sensitivity analysis**
 
 
 ## References
