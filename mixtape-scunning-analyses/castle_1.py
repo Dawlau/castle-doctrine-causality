@@ -1,3 +1,6 @@
+import os 
+from os.path import join
+from os.path import dirname
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
@@ -13,7 +16,8 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 
 # castle = read_data('castle.dta')
-castle = pd.read_stata('castle.dta')
+DATA_PATH = join(dirname(dirname(os.path.abspath(__file__))), 'data')
+castle = pd.read_stata(join(DATA_PATH, 'castle.dta'))
 crime1 = ("jhcitizen_c", "jhpolice_c",
           "murder", "homicide",
           "robbery", "assault", "burglary",
