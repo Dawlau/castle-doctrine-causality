@@ -1,62 +1,41 @@
-"""Data on castle-doctrine statutes and violent crime"""
+"""Data from Cai, De Janvry, and Sadoulet (2015)"""
 
 from statsmodels.datasets import utils as du
-from pandas import read_stata
-from os.path import dirname, abspath, join
 
 __docformat__ = 'restructuredtext'
 
-COPYRIGHT = """Federal Bureau of Investigation"""
+COPYRIGHT = """Cai, J., De Janvry, A. and Sadoulet, E., 2015."""
 TITLE = __doc__
 SOURCE = """
-Cheng, Cheng, and Mark Hoekstra. 2013. “Does Strengthening Self-Defense Law Deter Crime or Escalate Violence? Evidence from Expansions to Castle Doctrine.” Journal of Human Resources 48 (3): 821–54.
+Cai, J., De Janvry, A. and Sadoulet, E., 2015. Social networks and the decision to insure. American Economic Journal: Applied Economics, 7(2), pp.81-108.
 """
 
-DESCRSHORT = """Data on castle-doctrine statutes and violent crime"""
+DESCRSHORT = """Data from Cai, De Janvry, and Sadoulet (2015) on a social network experiment"""
 
-DESCRLONG = """This data looks at the impact of castle-doctrine statutes on violent crime. Data from the FBI Uniform Crime Reports Summary files are combined with information on castle-doctrine/stand-your-ground law impementation in different states. This data is used in the Difference-in-Differences chapter of Causal Inference: The Mixtape by Cunningham."""
+DESCRLONG = """The social_insure data contains data from Jai, De Janvry, and Saoudlet (2015) on a two-round social network-based experiment on getting farmers to get insurance. See the paper for more details. This data is used in the Instrumental Variables chapter of The Effect."""
 
 NOTE = """::
-    Number of observations - 550
-    Number of variables - 139
+    Number of observations - 1410
+    Number of variables - 13
     Variables name definitions::
-            year - Year
-            post - Post-treatment indicator
-            sid - state id
-            robbery_gun_r - Region-quarter fixed effects
-            jhcitizen_c - justifiable homicide by private citizen count
-            jhpolice_c - justifiable homicide by police count
-            homicide - homicide count per 100,000 state population
-            robbery - Region-quarter fixed effects
-            assault - aggravated assault count per 100,000 state population
-            burglary - burglary count per 100,000 state population
-            larceny - larceny count per 100,000 state population
-            motor - motor vehicle theft count per 100,000 state population
-            murder - murder count per 100,000 state population
-            unemployrt - unemployment rate
-            blackm_15_24 - % of black male aged 15-24
-            whitem_15_24 - % of white male aged 15-24
-            blackm_25_44 - % of black male aged 25-44
-            whitem_25_44 - % of white male aged 25-44
-            poverty - poverty rate
-            r20001 through r20104 - Region-quarter fixed effects
-            trend_1 through trend_51 - State linear time trends
-            l_homicide - Logged crime rate
-            l_larceny - Logged crime rate
-            l_motor - Logged crime rate
-            l_police - Logged police presence
-            l_income - Logged income
-            l_prisoner - Logged number of prisoners
-            l_lagprisoner - Lagged log prisoners
-            l_exp_subsidy - Logged subsidy spending
-            l_exp_pubwelfare - Logged public welfare spending
-            lead1 through lead9 and lag0 through lag5 - Indicators of how many time periods until/since treatment
-            popwt - Population weight
+            address - Natural village
+            village - Administrative village
+            takeup_survey - Whether farmer ended up purchasing insurance. (1 = yes)
+            age - Household Characteristics - Age
+            agpop - Household Characteristics - Household Size
+            ricearea_2010 - Area of Rice Production
+            disaster_prob - Perceived Probability of Disasters Next Year
+            male - Household Caracteristics: Gender of Household Head (1 = male)
+            default - "Default option" in experimental format assigned to. (1 = default is to buy, 0 = default is to not buy)
+            intensive - Whether or not was assigned to "intensive" experimental session (1 = yes)
+            risk_averse - Risk aversion measurement
+            literacy - 1 = literate, 0 = illiterate
+            pre_takeup_rate - Takeup rate prior to experiment
 """
 
 
 def load_pandas():
-    """Load the castle data and returns a Dataset class.
+    """Load the social_insure data and returns a Dataset class.
     Returns
     -------
     Dataset
@@ -67,7 +46,7 @@ def load_pandas():
 
 
 def load(as_pandas=None):
-    """Load the castle data and returns a Dataset class.
+    """Load the social_insure data and returns a Dataset class.
     Parameters
     ----------
     as_pandas : bool
@@ -82,8 +61,6 @@ def load(as_pandas=None):
 
 
 def _get_data():
-    filepath = dirname(abspath(__file__))
-    filename = join(filepath,'castle.dta')
-    data = read_stata(filename)
+    data = du.load_csv(__file__, 'Cai_2015.csv', sep=',')
     data = du.strip_column_names(data)
     return data
