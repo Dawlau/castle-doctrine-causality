@@ -4,7 +4,7 @@
 This project is part of the Causality course at the UvA during fall 2023. We look at an experiment that investigated how the social environment of rice farmers in rural China influences whether they adopt weather insurance (Cai, De Janvry & Sadoulet, 2015), along with other variables such as demographics or previously adopting weather insurance.
 
 ## Set-up
-To install the `causal_data_science_env` environment, run the following in the terminal, depending on your OS:
+To run the jupyter notebook yourself, install the `causal_data_science_env` environment.  Run the following in the terminal, depending on your OS:
 
 ```
 conda env create -f causal_data_science_env_mac.yml
@@ -22,17 +22,18 @@ conda env create -f causal_data_science_env_windows.yml
 Data from a randomized experiment in rural China, focusing on weather insurance adoption among rice farmers. You can also find the dataset in [this repository](https://github.com/NickCH-K/causaldata/tree/main/Python/causaldata/social-insure).
 
 ## How to view this repository
-You can follow the whole project by opening and running the `causal-estimation.ipynb` notebook. 
+You can follow the whole project by opening and running the `causal-analysis.ipynb` notebook. 
 
 ## The project pipeline 
 We pay attention to the following:
-1. **Exploratory data analysis**
-* Testing for dependence of the variables
-2. **Identifying estimands**
-* Backdoor/frontdoor criterion, instrumental variables
-3. **Estimating causal effects**
-4. **Causal discovery**
-5. **Validation and sensitivity analysis**
+1. **Exploratory data analysis**.
+Testing for dependence of the variables, getting hints for the causal graph, and estimating it using common sense.
+2. **Identifying estimands**. 
+Using backdoor/frontdoor criterion, instrumental variables approaches to find ways to correct for spurious correlations in the causal graph.
+3. **Estimating causal effects**. 
+Identifying how the effect of various variables on the outcome variable.
+4. **Causal discovery**. Automatically discovering the causal graph from observational data to test our initial estimate.
+5. **Validation and sensitivity analysis**. Checking how robust our estimations are and concluding our analysis.
 
 
 ## References
