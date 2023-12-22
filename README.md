@@ -11,7 +11,7 @@ conda env create -f causal_data_science_env_mac.yml
 ```
 OR
 ```
-conda env create -f causal_data_science_env_linus.yml
+conda env create -f causal_data_science_env_linux.yml
 ```
 OR
 ```
