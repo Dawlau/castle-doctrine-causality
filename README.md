@@ -1,16 +1,17 @@
-# Identifying the Causal Variables of the Castle Doctrine 🏰
+# TO BE OR NOT TO BE INSURED? 🧑‍🌾
+## How Social Networks Influence One's Decision To Insure
 
-This project is part of the Causality course at the UvA during fall 2023. We work with the Castle doctrine dataset (Cheng et al., 2012) to identify whether the castle (stand-your-ground) doctrine influences the rates of violence, and what the important variables influencing this relationship are. You can also find the dataset in [this repository](https://github.com/NickCH-K/causaldata/tree/main/Python/causaldata/castle).
+This project is part of the Causality course at the UvA during fall 2023. We look at an experiment that investigated how the social environment of rice farmers in rural China influences whether they adopt weather insurance (Cai, De Janvry & Sadoulet, 2015), along with other variables such as demographics or previously adopting weather insurance.
 
 ## Set-up
-To install the `castle` environment, run the following in the terminal:
+To install the `causal_data_science_env` environment (Mac users only), run the following in the terminal:
 
 ```
-conda env create -f castle-env.yml
+conda env create -f causal_data_science_env_mac.yml
 ```
 
 ## Dataset
-We use the FBI Uniform Crime Reports Summary Part I files from 2000 to 2010. The FBI Uniform Crime Reports is a harmonized data set on eight “index” crimes collected from voluntarily participating police agencies across the country. 
+Data from a randomized experiment in rural China, focusing on weather insurance adoption among rice farmers. You can also find the dataset in [this repository](https://github.com/NickCH-K/causaldata/tree/main/Python/causaldata/social-insure).
 
 ## The project pipeline
 We pay attention to the following:
@@ -24,4 +25,4 @@ We pay attention to the following:
 
 
 ## References
-*Cheng, Cheng and Hoekstra, Mark and Cheng, Cheng, Does Strengthening Self-Defense Law Deter Crime or Escalate Violence? Evidence from Castle Doctrine (June 2012). NBER Working Paper No. w18134, Available at SSRN: https://ssrn.com/abstract=2079878*
+*Cai, J., De Janvry, A. and Sadoulet, E., 2015. Social networks and the decision to insure. American Economic Journal: Applied Economics, 7(2), pp.81-108. DOI: 10.1257/app.20130442.*
