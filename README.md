@@ -4,10 +4,18 @@
 This project is part of the Causality course at the UvA during fall 2023. We look at an experiment that investigated how the social environment of rice farmers in rural China influences whether they adopt weather insurance (Cai, De Janvry & Sadoulet, 2015), along with other variables such as demographics or previously adopting weather insurance.
 
 ## Set-up
-To install the `causal_data_science_env` environment (Mac users only), run the following in the terminal:
+To install the `causal_data_science_env` environment, run the following in the terminal, depending on your OS:
 
 ```
 conda env create -f causal_data_science_env_mac.yml
+```
+OR
+```
+conda env create -f causal_data_science_env_linus.yml
+```
+OR
+```
+conda env create -f causal_data_science_env_windows.yml
 ```
 
 ## Dataset
