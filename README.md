@@ -13,7 +13,10 @@ conda env create -f causal_data_science_env_mac.yml
 ## Dataset
 Data from a randomized experiment in rural China, focusing on weather insurance adoption among rice farmers. You can also find the dataset in [this repository](https://github.com/NickCH-K/causaldata/tree/main/Python/causaldata/social-insure).
 
-## The project pipeline
+## How to view this repository
+You can follow the whole project by opening and running the `causal-estimation.ipynb` notebook. 
+
+## The project pipeline 
 We pay attention to the following:
 1. **Exploratory data analysis**
 * Testing for dependence of the variables
